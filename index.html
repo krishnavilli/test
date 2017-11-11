@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script src="./app.js"></script>
+</head>
+<body ng-app="myapp">
+
+  <div class="header"><h1>User Management</h1></div>
+
+  <div> <h2>User List cards</h2></div>
+<ul>
+<li ng-repeat='user in cards'>
+  <div> 
+    <div class="name">{{user.name}}</div>
+    <div class="button"><button ng-click="Opendetails({{user.id}})">View Todos</button></div>
+
+  </div>
+</li>
+</ol>
+
+</body>
+</html>
